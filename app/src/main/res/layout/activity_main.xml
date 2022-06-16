@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="197dp"
+            android:layout_height="192dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/watch2"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/watch3"
+            tools:ignore="ImageContrastCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35sp"
+            android:layout_marginTop="80sp"
+            android:autofillHints=""
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="@string/Password1"
+            android:inputType="textPassword"
+            android:minHeight="10dp"
+            android:textColorHint="@android:color/white"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35sp"
+            android:layout_marginTop="50dp"
+            android:autofillHints=""
+            android:backgroundTint="@android:color/white"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="10dp"
+            android:textColorHint="@android:color/white"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40sp"
+            android:layout_marginTop="120sp"
+            android:backgroundTint="#58A65C"
+            android:text="@string/btn1"
+            android:textSize="11sp"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:text="@string/smart"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>
